@@ -10,11 +10,11 @@ import (
 
 func RootHandler(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-type", "text/html")
-	fmt.Fprintf(response, "Hey there!\n")
+	fmt.Fprintf(response, "<h1>Hey there!</h1>\n")
 }
 
 func main() {
-	var host = flag.String("host", "127.0.0.1", "IP of host to run webserver on")
+	var host = flag.String("host", "", "IP of host to run webserver on")
 	var port = flag.Int("port", 8080, "Port to run webserver on")
 
 	flag.Parse()
