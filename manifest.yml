@@ -1,0 +1,6 @@
+---
+applications:
+- name: simple-go-web-app
+  memory: 512Mb
+  command: ./simple-go-web-app --port $PORT
+  path: out/simple-go-web-app

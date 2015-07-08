@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+set -e
+
+bin=$(dirname $0)
+
+goversion=`go version`
+
+if [[ $string =~ .*GCC.* ]];then
+   build_options="-compiler gccgo -gccgoflags '-static-libgo'"
+fi
+
+go build $build_options -o $bin/../out/bosh-agent github.com/allomov/simple-go-web-app/main
