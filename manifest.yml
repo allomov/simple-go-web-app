@@ -4,3 +4,4 @@ applications:
   memory: 512Mb
   command: ./simple-go-web-app --port $PORT
   path: out/simple-go-web-app
+  buildpack: https://github.com/ryandotsmith/null-buildpack
