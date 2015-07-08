@@ -3,6 +3,6 @@ applications:
 - name: simple-go-web-app
   memory: 512Mb
   command: ./simple-go-web-app --port $PORT
-  path: out/simple-go-web-app
+  path: out
   buildpack: https://github.com/ryandotsmith/null-buildpack
   stack: ppc64le_trusty
