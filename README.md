@@ -14,7 +14,7 @@ $GOPATH/bin/simple-go-web-app
 
 ```
 go get -d github.com/allomov/simple-go-web-app
-cd $GOPATH/github.com/allomov/simple-go-web-app
+cd $GOPATH/src/github.com/allomov/simple-go-web-app
 ./bin/build
 cf push
 ```

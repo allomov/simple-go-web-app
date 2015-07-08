@@ -6,7 +6,7 @@ bin=$(dirname $0)
 
 goversion=`go version`
 
-if [[ $string =~ .*GCC.* ]];then
+if [[ $string =~ .*gccgo.* ]];then
    build_options="-compiler gccgo -gccgoflags '-static-libgo'"
 fi
 
