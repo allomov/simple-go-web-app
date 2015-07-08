@@ -10,4 +10,4 @@ if [[ $string =~ .*gccgo.* ]];then
    build_options="-compiler gccgo -gccgoflags '-static-libgo'"
 fi
 
-go build $build_options -o $bin/../out/bosh-agent github.com/allomov/simple-go-web-app/main
+go build $build_options -o $bin/../out/simple-go-web-app github.com/allomov/simple-go-web-app
