@@ -5,4 +5,4 @@ applications:
   command: ./simple-go-web-app --port $PORT
   path: out
   buildpack: https://github.com/ryandotsmith/null-buildpack
-  stack: ppc64le_trusty
+  stack: trustyppc64le
